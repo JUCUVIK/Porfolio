@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Desarrollador Multiplataforma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="brand">
+        <div class="img__github">
+          <img src="imagenes/foto perdilgithub.jpeg" alt="Foto de perfil">
+        </div>
+        <div>
+          <div>Desarrollador Multiplataforma</div>
+          <small class="muted">Actualmente estudiando</small>
+        </div>
+      </div>
+      <div class="nav__links">
+        <a href="#inicio">Inicio</a>
+        <a href="#skills">Competencias</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div>
+        <span class="hero__badge">Desarrollo multiplataforma | Mobile | Web | Desktop | VR</span>
+        <h1>Sergio Cuadrado Hernández</h1>
+        <p class="hero__subtitle">Combino diseño centrado en el usuario, arquitectura limpia y despliegues confiables para entregar soluciones que funcionan y se pueden mantener.</p>
+        <div class="cta">
+          <button class="btn primary">Descargar CV</button>
+          <button class="btn">Agenda una llamada</button>
+        </div>
+        <div class="hero__meta">
+          <div>
+            <strong>Stack principal</strong>
+            <div class="tag-cloud">
+              <span class="tag">Kotlin</span>
+              <span class="tag">Java</span>
+              <span class="tag">Angular</span>
+              <span class="tag">Unity</span>
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Blender</span>
+              <span class="tag">Figma</span>
+              <span class="tag">Python</span>
+              <span class="tag">Android Studio</span>
+            </div>
+          </div>
+          <div>
+            <strong>Delivery</strong>
+            <p class="muted m-0">Ciclo completo: discovery, prototipado, desarrollo, CI/CD, monitoreo.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card card--hero">
+        <div>
+        <img class="main__imagen" src="imagenes/foto prueba curriculum.jpeg" alt="">
+          <p class="muted mt-0">Mas sobre mi...</p>
+          <h3 class="mt-0 mb-05">Productos que la gente quiere usar</h3>
+          <p class="muted">Código mantenible, entregas puntuales y feedback continuo. Cada feature incluye métricas, pruebas y accesibilidad.</p>
+        </div>
+        <div class="hero__meta hero__meta--compact">
+          <div>
+            <strong>Disponibilidad</strong>
+            <p class="muted m-0">Remoto / Híbrido · CET</p>
+          </div>
+          <div>
+            <strong>Colaboración</strong>
+            <p class="muted m-0">Scrum | Kanban | Product-led</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section__head">
+        <h2 class="section__title">Competencias clave</h2>
+        <span class="section__hint">Del diseño al deploy con rigor técnico</span>
+      </div>
+      <div class="grid">
+        <div class="card reveal">
+          <div class="skill__title">Arquitectura y calidad</div>
+          <p class="skill__desc">Clean Architecture, SOLID, testing piramidal, linters y análisis estático.</p>
+          <div>
+            <span class="pill">JUnit / Espresso</span>
+            <span class="pill">XCTest</span>
+            <span class="pill">SonarQube</span>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="skill__title">Experiencia de usuario</div>
+          <p class="skill__desc">Diseño de flujos, microinteracciones y accesibilidad WCAG para apps móviles y web.</p>
+          <div>
+            <span class="pill">Figma</span>
+            <span class="pill">Design tokens</span>
+            <span class="pill">Motion</span>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="skill__title">DevOps y entrega</div>
+          <p class="skill__desc">Pipelines CI/CD, versionado semántico, feature flags y monitoreo.</p>
+          <div>
+            <span class="pill">GitHub Actions</span>
+            <span class="pill">Fastlane</span>
+            <span class="pill">Firebase / Sentry</span>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="skill__title">Backends que soportan el producto</div>
+          <p class="skill__desc">APIs robustas, autenticación, mensajería y almacenamiento seguro.</p>
+          <div>
+            <span class="pill">Node.js / Express</span>
+            <span class="pill">REST / GraphQL</span>
+            <span class="pill">PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section__head">
+        <h2 class="section__title">Proyectos seleccionados</h2>
+        <span class="section__hint">Historias breves orientadas a impacto</span>
+      </div>
+      <div id="projects-grid" class="grid" aria-live="polite"></div>
+      <p id="projects-status" class="muted m-0" style="margin-top: 0.5rem;">Cargando proyectos de GitHub…</p>
+      <button id="projects-refresh" class="btn" type="button" style="margin-top: 0.5rem;">Actualizar proyectos manualmente</button>
+    </section>
+
+    <section id="experiencia">
+      <div class="section__head">
+        <h2 class="section__title">Experiencia</h2>
+        <span class="section__hint">Contexto de roles y resultados</span>
+      </div>
+      <div class="timeline">
+        <div class="timeline__item reveal">
+          <div class="timeline__role">Líder técnico · Producto SaaS</div>
+          <div class="timeline__time">2023  Actualidad</div>
+          <p class="skill__desc">Dirigí la migración a arquitectura modular, reduciendo el time-to-market en 20% y disminuyendo bugs críticos en producción.</p>
+        </div>
+        <div class="timeline__item reveal">
+          <div class="timeline__role">Mobile Engineer · Fintech</div>
+          <div class="timeline__time">2021  2023</div>
+          <p class="skill__desc">Implementé CI/CD con pruebas automáticas y distribución interna, mejorando la frecuencia de releases de mensual a semanal.</p>
+        </div>
+        <div class="timeline__item reveal">
+          <div class="timeline__role">Fullstack · Startups</div>
+          <div class="timeline__time">2019  2021</div>
+          <p class="skill__desc">Diseñé MVPs iterativos con métricas desde el día uno, logrando validar hipótesis en menos de 4 semanas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="section__head">
+        <h2 class="section__title">Contacto</h2>
+        <span class="section__hint">Hablemos de tu próximo lanzamiento</span>
+      </div>
+      <div class="contact reveal">
+        <div>
+          <h3 class="mt-0">¿Cómo puedo ayudar?</h3>
+          <p class="muted">Diseñar, construir y entregar apps consistentes en mobile, web y escritorio. Respondo en menos de 24h.</p>
+          <div class="hero__meta mt-1">
+            <div>
+              <strong>Email</strong>
+              <p class="muted m-0">tucorreo@ejemplo.com</p>
+            </div>
+            <div>
+              <strong>LinkedIn</strong>
+              <p class="muted m-0">linkedin.com/in/tu-perfil</p>
+            </div>
+          </div>
+        </div>
+        <form>
+          <div>
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" placeholder="Tu nombre" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="nombre@correo.com" required>
+          </div>
+          <div>
+            <label for="mensaje">Proyecto</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Cuéntame qué necesitas"></textarea>
+          </div>
+          <button class="btn primary" type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="footer">Construido con cuidado. Actualizado 2026.</div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
